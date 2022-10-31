@@ -128,7 +128,7 @@ const apiProduct = {
                     discount: product.discount,
                     category: product.id_category,
                     color: product.id_color,
-                    image: `http://localhost:3030/images/products/${product.Images[0].path}` 
+                    image: `images/products/${product.Images[0].path}` 
                 })
             })
             
@@ -166,7 +166,7 @@ const apiProduct = {
             }) 
             let product = [...lastProduct][0]
             product = product.toJSON()
-                product.image = `http://localhost:3030/images/products/${product.Images[0].path}`;
+                product.image = `images/products/${product.Images[0].path}`;
 
                 let respuesta = {
                     meta: {
@@ -202,7 +202,7 @@ const apiProduct = {
                 discount: product.discount,
                 category: product.id_category,
                 color: product.id_color,
-                image: `http://localhost:3030/images/products/${product.Images[0].path}` 
+                image: `images/products/${product.Images[0].path}` 
             }
 
             let respuesta = {meta, data}
